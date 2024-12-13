@@ -48,6 +48,7 @@ CREATE TABLE IF NOT EXISTS Misiones (
 CREATE TABLE IF NOT EXISTS MisionesNinjas (
 	fechaInicio DATE NOT NULL,
 	fechaFinal DATE, 
+	estado BOOLEAN NOT NULL, 
 	idMision INT,
 	idNinja INT,
 	FOREIGN KEY (idMision) REFERENCES Misiones(idMision),
